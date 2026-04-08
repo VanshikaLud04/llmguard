@@ -18,6 +18,7 @@ LLMGuard sits between your application and any LLM provider. It transparently tr
 - **Slack alerts** — webhook notifications when killswitch or daily budget triggers
 - **Stress tested** — concurrent load testing with `stress_test.py`
 - **Pluggable storage** — SQLite active, Redis-ready interface for production scale
+- **Mock provider** — zero-config demo mode, no API keys required
 
 ---
 
