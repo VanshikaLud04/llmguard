@@ -2,7 +2,9 @@
 
 > Production-style cost-aware middleware for LLM APIs — OpenAI, Anthropic Claude, and Groq
 
-LLMGuard sits between your application and any LLM provider. It transparently tracks every token spent, enforces per-user budgets, and kills runaway requests before they cost you money — across all providers through a single unified interface.
+LLM APIs can cause uncontrolled cost spikes in production. 
+LLM-Cost-Guard is a middleware layer that monitors spend in real time, 
+enforces per-user budgets, and kills runaway requests before they cost you money.
 
 ---
 
@@ -87,7 +89,7 @@ python demo.py
 uvicorn main:app --reload
 # → Open http://127.0.0.1:8000/docs for Swagger UI
 
-# Stress test (requires OpenAI credits)
+# Stress test with mock provider (no API keys needed)
 python stress_test.py
 ```
 
