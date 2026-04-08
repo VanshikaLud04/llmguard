@@ -24,14 +24,13 @@ LLMGuard sits between your application and any LLM provider. It transparently tr
 ## 📸 Screenshots
 
 ### ✅ Unit Tests Passing
-![Unit Tests](screenshots/test_cost.png)
+![alt text](image.png)
 
 ### ✅ Groq Live Response
-![Groq Demo](screenshots/groq_demo.png)
+![alt text](image-3.png)
 
 ### ✅ FastAPI Swagger UI
-![Swagger UI](screenshots/swagger_ui.png)
-
+![alt text](image-2.png)
 ---
 
 ## ⚙️ Setup
