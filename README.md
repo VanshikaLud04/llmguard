@@ -1,4 +1,4 @@
-# 🛡️ LLMGuard
+# 🛡️ LLM Cost Guard
 
 > Production-style cost-aware middleware for LLM APIs — OpenAI, Anthropic Claude, and Groq
 
