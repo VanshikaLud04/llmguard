@@ -21,6 +21,18 @@ LLMGuard sits between your application and any LLM provider. It transparently tr
 
 ---
 
+## 🏗️ Architecture
+
+Every `call_llm()` request flows through a strict pipeline before any LLM provider is touched:
+<img width="1440" height="1228" alt="image" src="https://github.com/user-attachments/assets/1a2a128f-faf7-4995-8113-082fb28dfc79" />
+**Key design decisions:**
+- Killswitch runs *before* the API call — no tokens are spent on denied requests
+- Storage is abstracted behind `base.py` — swap SQLite for Redis with zero middleware changes  
+- Fallback chain is deterministic: `gpt-4o → claude-sonnet → gpt-4o-mini → claude-haiku → llama3`
+- All cost calculations are deterministic and offline — no external pricing API calls
+
+---
+
 ## 📸 Screenshots
 
 ### ✅ Unit Tests Passing
