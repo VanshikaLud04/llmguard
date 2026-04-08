@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+env/
+.env
+
+# API Keys and Secrets
+*.env
+.env.local
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Databases
+*.sqlite3
+llmguard.db
+
+# OS specific files
+.DS_Store
