@@ -52,8 +52,8 @@ Every `call_llm()` request flows through a strict pipeline before any LLM provid
 ## ⚙️ Setup
 
 ```bash
-git clone https://github.com/VanshikaLud04/llmguard
-cd llmguard
+git clone https://github.com/VanshikaLud04/llm-cost-guard
+cd llm-cost-guard
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
